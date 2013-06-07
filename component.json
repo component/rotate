@@ -2,7 +2,7 @@
   "name": "rotate",
   "repo": "component/rotate",
   "description": "Canvas rotation with origin support",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": ["canvas", "rotate", "rotation"],
   "dependencies": {},
   "development": {},
