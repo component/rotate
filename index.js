@@ -1,5 +1,4 @@
 
-
 module.exports = function(ctx, o){
   var x = o.x || 0;
   var y = o.y || 0;
