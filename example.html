@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Rotate</title>
+</head>
+<body>
+
+  <script src="build/build.js"></script>
+
+  <p><input type="range" min=0 max=360 value=0></p>
+  <canvas width=300 height=300></canvas>
+
+  <script>
+    var rotate = require('rotate');
+
+    var input = document.querySelector('input');
+    var canvas = document.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+
+    function draw(deg) {
+      canvas.width = canvas.width;
+      ctx.strokeRect(0, 0, 300, 300);
+      ctx.save();
+
+      ctx.translate(25, 25);
+      rotate(ctx, { degrees: deg, x: 25, y: 25 });
+      ctx.fillRect(0, 0, 50, 50);
+      ctx.fillStyle = 'red';
+
+      ctx.restore();
+      ctx.strokeRect(50, 50, 50, 50);
+    }
+
+    draw(0);
+
+    input.onchange = function(e){
+      draw(input.value);
+    };
+  </script>
+</body>
+</html>

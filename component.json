@@ -1,0 +1,14 @@
+{
+  "name": "rotate",
+  "repo": "component/rotate",
+  "description": "Canvas rotation with origin support",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
