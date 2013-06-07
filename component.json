@@ -3,7 +3,7 @@
   "repo": "component/rotate",
   "description": "Canvas rotation with origin support",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["canvas", "rotate", "rotation"],
   "dependencies": {},
   "development": {},
   "license": "MIT",
